@@ -1,0 +1,22 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Clément M.",
+  "license": "BSD-3-Clause",
+  "description": "Basic web crawler for a search engine.",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1",
+    "puppeteer": "^24.1.1",
+    "robots-parser": "^3.0.1"
+  }
+}
