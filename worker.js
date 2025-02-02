@@ -26,24 +26,6 @@ const getRandomUserAgent = () => {
 
 const isAllowed = async (url) => {
     try {
-        // REMOVE THIS BEFORE UPLOAD TO GITHUB REPO
-        const blockedSites = [
-            'instagram.com',
-            'facebook.com',
-            'twitter.com',
-            'linkedin.com',
-            'pinterest.com',
-            'snapchat.com',
-            'tiktok.com'
-        ];
-
-        for (let site of blockedSites) {
-            if (url.includes(site)) {
-                return false;
-            }
-        }
-        // !!!
-
         const robotsUrl = new URL('/robots.txt', url).href;
         const { data } = await axios.get(robotsUrl);
 
