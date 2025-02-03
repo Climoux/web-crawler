@@ -54,16 +54,16 @@ DB_PASSWORD=your_password
 DB_DATABASE=your_database
 ```
 
-2. Check number of workers. (default: 5)
+3. Check number of workers. (default: 5)
 > To begin - choose a single worker to avoid errors in the queue. Once this first worker has queued several URLs, you can add more workers.
 
-3. Check the starting URL in the `worker.js` file. You can choose any URL to get started :
+4. Check the starting URL in the `worker.js` file. You can choose any URL to get started :
 ```js
 addUrlToQueue('CHOOSE_YOUR_URL');
 ```
 > After your first start, you can comment out this line, to avoid visiting the URL every time you run the crawler.
 
-4. Run the crawler using the following command:
+5. Run the crawler using the following command:
 ```sh
 npm run start
 # or
